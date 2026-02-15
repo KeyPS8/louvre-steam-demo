@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Le Mystère au Louvre - Steam Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="pressKey">
+  <h1>LE MYSTÈRE AU LOUVRE</h1>
+  <p>Press Any Key</p>
+</div>
+
+<div id="menu" style="display:none;">
+  <button onclick="startGame()">Nouvelle Partie</button>
+</div>
+
+<div id="hud">
+Équipe: <span id="teamNameDisplay"></span>
+Score: <span id="score">0</span>
+Rang: <span id="rank">Recrue</span>
+</div>
+
+<canvas id="game"></canvas>
+
+<div id="ending"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
