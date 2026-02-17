@@ -66,7 +66,7 @@ player.y-camera.y,
 250
 );
 g.addColorStop(0,"rgba(0,0,0,0)");
-g.addColorStop(1,"rgba(0,0,0,0.97)");
+g.addColorStop(1,"rgba(0,0,0,0.6)");
 ctx.fillStyle=g;
 ctx.fillRect(0,0,canvas.width,canvas.height);
 }
