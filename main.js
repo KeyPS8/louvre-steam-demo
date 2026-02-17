@@ -31,17 +31,14 @@ gameLoop();
 }
 
 function update(){
-    // Vertical (ya funciona)
     if(keys["w"]||keys["ArrowUp"]) player.y+=player.speed;
     if(keys["s"]||keys["ArrowDown"]) player.y-=player.speed;
 
-    // Horizontal (invertimos aquí)
     if(keys["a"]||keys["ArrowLeft"]) player.x-=player.speed;
     if(keys["d"]||keys["ArrowRight"]) player.x+=player.speed;
 
-camera.x = player.x + canvas.width/2;
-camera.y = player.y - canvas.height/2;
-
+    camera.x = player.x - canvas.width/2;
+    camera.y = player.y - canvas.height/2;
 }
 
 function drawWorld(){
